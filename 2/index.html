@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Model 2</title>
+    <link rel="stylesheet" href="../src/style.css" />
+  </head>
+  <body>
+    <model-viewer
+      src="../models/2/model.glb"
+      ios-src="../models/2/model.usdz"
+      alt="Model 2"
+      ar
+      ar-modes="webxr quick-look"
+      autoplay
+      camera-controls
+      disable-pan
+      touch-action="pan-y"
+      shadow-intensity="1"
+    >
+      <div slot="progress-bar" class="spinner" role="status" aria-label="Loading the model"></div>
+      <button slot="ar-button" id="ar" type="button">View in AR</button>
+    </model-viewer>
+    <p class="hint">Drag to turn it round, pinch or scroll to zoom</p>
+    <script type="module" src="../src/main.js"></script>
+  </body>
+</html>
